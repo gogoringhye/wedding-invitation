@@ -1,0 +1,65 @@
+@media (max-width: 980px) {
+  .hero-inner,
+  .story-list,
+  .info-grid,
+  .account-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item,
+  .gallery-item:nth-child(3n + 1),
+  .gallery-item:nth-child(3n + 2),
+  .gallery-item:nth-child(3n + 3) {
+    grid-column: span 6;
+    min-height: 260px;
+  }
+
+  .site-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-shell {
+    padding: 92px 0;
+  }
+
+  .hero {
+    padding-top: 56px;
+  }
+
+  .hero-copy h1 {
+    gap: 0.1em;
+  }
+
+  .hero-actions,
+  .map-actions,
+  .footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item,
+  .gallery-item:nth-child(3n + 1),
+  .gallery-item:nth-child(3n + 2),
+  .gallery-item:nth-child(3n + 3) {
+    grid-column: auto;
+    min-height: 250px;
+  }
+
+  .site-footer {
+    padding-bottom: 32px;
+  }
+}

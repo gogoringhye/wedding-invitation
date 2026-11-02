@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Admin · Our Wedding Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <a class="admin-home-link" href="index.html">← 청첩장으로 돌아가기</a>
+
+      <section id="admin-login-panel" class="admin-panel admin-login-panel">
+        <p class="eyebrow">Our Wedding Day · Admin</p>
+        <h1>방명록 관리</h1>
+        <p class="admin-intro">관리자 계정으로 로그인해 축하 메시지를 확인하고 관리하세요.</p>
+
+        <form id="admin-login-form" class="admin-login-form">
+          <label class="admin-field">
+            <span>이메일</span>
+            <input type="email" name="email" autocomplete="username" required />
+          </label>
+          <label class="admin-field">
+            <span>비밀번호</span>
+            <input type="password" name="password" autocomplete="current-password" required />
+          </label>
+          <button type="submit" class="button button-primary admin-submit">로그인</button>
+        </form>
+      </section>
+
+      <section id="admin-dashboard" class="admin-panel admin-dashboard" hidden>
+        <div class="admin-dashboard-header">
+          <div>
+            <p class="eyebrow">Guestbook</p>
+            <h1>방명록 관리</h1>
+            <p id="admin-account" class="admin-intro"></p>
+          </div>
+          <button id="admin-logout" type="button" class="button button-secondary">로그아웃</button>
+        </div>
+
+        <div class="admin-summary" aria-label="방명록 요약">
+          <div class="admin-summary-card">
+            <span>게시 중 메시지</span>
+            <strong id="guestbook-count">-</strong>
+          </div>
+          <div class="admin-summary-card">
+            <span>최근 등록</span>
+            <strong id="guestbook-latest">-</strong>
+          </div>
+        </div>
+
+        <div class="admin-list-toolbar">
+          <label class="admin-search">
+            <span class="sr-only">방명록 검색</span>
+            <input id="guestbook-search" type="search" placeholder="이름 또는 메시지 검색" />
+          </label>
+          <button id="guestbook-refresh" type="button" class="button button-secondary">새로고침</button>
+        </div>
+
+        <div id="guestbook-admin-list" class="admin-guestbook-list" aria-live="polite"></div>
+      </section>
+
+      <p id="admin-status" class="admin-status" role="status" aria-live="polite" hidden></p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>
