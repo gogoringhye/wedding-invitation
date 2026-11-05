@@ -147,8 +147,8 @@ img {
 .hero-copy h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(3.6rem, 7vw, 7rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   font-weight: 500;
   color: var(--text);
   display: flex;
@@ -159,8 +159,8 @@ img {
 
 .name-line {
   display: block;
-  clip-path: inset(0 100% 0 0);
-  will-change: clip-path, transform;
+  clip-path: inset(0 0 0 0);
+  will-change: auto;
 }
 
 .ampersand {
