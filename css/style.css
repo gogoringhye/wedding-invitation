@@ -226,7 +226,7 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.08));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.08));
   z-index: 1;
 }
 
@@ -461,7 +461,7 @@ img {
 .countdown-item {
   padding: 26px 18px;
   border-radius: var(--radius-medium);
-  background: rgba(255,255,255,0.42);
+  background: rgba(255, 255, 255, 0.42);
   border: 1px solid var(--line);
   text-align: center;
 }
@@ -521,18 +521,18 @@ img {
   min-height: 46px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.4);
+  background: rgba(255, 255, 255, 0.4);
   color: var(--text);
 }
 
 .guestbook-form {
-  background: rgba(255,255,255,0.38);
+  background: rgba(255, 255, 255, 0.38);
   border: 1px solid var(--line);
   border-radius: var(--radius-medium);
   padding: clamp(20px, 3vw, 28px);
 }
 
-.form-row + .form-row {
+.form-row+.form-row {
   margin-top: 18px;
 }
 
@@ -553,9 +553,10 @@ img {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255, 255, 255, 0.7);
   padding: 14px 16px;
   color: var(--text);
+  margin-bottom: 25px;
 }
 
 .form-row textarea {
@@ -576,7 +577,7 @@ img {
 }
 
 .guestbook-item {
-  background: rgba(255,255,255,0.38);
+  background: rgba(255, 255, 255, 0.38);
   border: 1px solid var(--line);
   border-radius: var(--radius-medium);
   padding: 18px 20px;
@@ -610,7 +611,7 @@ img {
   padding: 5px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   color: var(--muted);
   font: inherit;
   font-size: 0.8rem;
@@ -662,7 +663,9 @@ img {
     scroll-behavior: auto;
   }
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
