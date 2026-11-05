@@ -281,7 +281,7 @@ img {
 }
 
 .story-list::before {
-  content: '';
+  /* content: ''; */
   position: absolute;
   left: 50%;
   top: 20px;
@@ -303,14 +303,14 @@ img {
 }
 
 .story-card::before {
-  content: '';
+  /* content: '';
   position: absolute;
   left: 50%;
   top: 26px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--champagne);
+  background: var(--champagne); */
   transform: translateX(-50%);
   box-shadow: 0 0 0 6px rgba(174, 146, 116, 0.12);
 }
